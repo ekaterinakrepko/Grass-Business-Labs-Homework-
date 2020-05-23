@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'Conv_ofont.ru_Myriad Pro';
+	src: url('fonts/ofont.ru_Myriad Pro.eot');
+	src: local('☺'), url('fonts/ofont.ru_Myriad Pro.woff') format('woff'), url('fonts/ofont.ru_Myriad Pro.ttf') format('truetype'), url('fonts/ofont.ru_Myriad Pro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+    font-family: "Myriad Pro";
+}
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +29,12 @@
     text-transform: uppercase;
     color: #949494;
     font-size: 14.92px;
+    font-family: "Myriad Pro";
 }
 .header,
 .main{
     color: #cbcccd;
+    background: #fcfcfc;
 }
 
 .title{
@@ -36,17 +48,134 @@
 
 .recipes_list{
     display: flex;
+    border: 2px solid #f2f2f2;
  
 }
 
 .info{
 display: flex;
-flex-flow: wrap;
+flex-direction: column;
+}
+
+.photo>img{
+    position: absolute;
+}
+
+.my_profil{
+    position: relative;
+    z-index: 50;
+    left: 15px;
+    top: 258px;
+}
+
+a.profil_name{
+    text-decoration: none;
+
 }
 
 .photo,
 .info{
     display: flex;
     flex-basis: 50%;
+    background: #ffffff;
+}
 
+
+
+.info_title{
+    display: flex;
+    justify-content: center;
+    color: #3d3d3d;
+    font-size: 24px;
+    line-height: 27.55px;
+
+}
+
+.info_icon{
+    display: flex;
+    justify-content: space-around;
+
+}
+.icon1,
+.icon2,
+.icon3{
+    display: flex;
+    flex-direction: row; 
+    border: 2px solid #cbcccd;
+    padding: 6px 0 6px 6px;
+    border-radius: 50px;
+}
+
+
+.clock,
+.time,
+.hat,
+.level,
+.calories,
+.run{
+   display: flex;
+   color: #b5904e;
+   font-size: 14px;
+
+}
+.time,
+.level,
+.run{
+    padding-right: 6px;
+    padding-left: 12px;
+}
+
+.info_text{
+    display: flex;
+    color: #5b5b5b;
+    font-size: 16px;
+    line-height: 18.73px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    border-bottom: 2px solid #cbcccd;
+}
+
+.social_network{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_network{
+    padding-top: 12px;
+}
+
+.like{
+    display: flex;
+    padding-right: 13px;
+}
+
+
+.social{
+    display: flex;
+}
+
+.social_item_vk,
+.social_item_facebook,
+.social_item_odnoklassniki{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_item_vk{
+    width: 24px;
+    height: 17px;
+}
+
+.social_item_facebook{
+    width: 10px;
+    height: 17px;
+}
+
+.social_item_odnoklassniki{
+    width: 10px;
+    height: 17px;
+}
+
+.social_item_facebook{
+    padding: 0 23px;
 }
