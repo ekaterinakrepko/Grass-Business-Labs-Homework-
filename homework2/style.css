@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1366px;
+    margin: 0 auto;
+
+}
+
+.menu{
+    padding: 25px 54px 50px  54px;
+}
+
+.nav_link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #949494;
+    font-size: 14.92px;
+}
+.header,
+.main{
+    color: #cbcccd;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #5b5b5b;
+    font-size: 34.44px;
+    padding-bottom: 55px;
+}
+
+.recipes_list{
+    display: flex;
+ 
+}
+
+.info{
+display: flex;
+flex-flow: wrap;
+}
+
+.photo,
+.info{
+    display: flex;
+    flex-basis: 50%;
+
+}
