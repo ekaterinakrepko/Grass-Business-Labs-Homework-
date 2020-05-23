@@ -59,25 +59,27 @@ flex-direction: column;
 
 .photo>img{
     position: absolute;
+    height: 100%;
 }
 
 .my_profil{
-    position: relative;
-    z-index: 50;
+    position: absolute;
     left: 15px;
-    top: 258px;
-}
-
-a.profil_name{
+    bottom: 10px;
     text-decoration: none;
-
+  
 }
+.my_profil>img{
+border-radius: 50%;
+}
+
 
 .photo,
 .info{
     display: flex;
     flex-basis: 50%;
     background: #ffffff;
+    position: relative;
 }
 
 
@@ -104,8 +106,15 @@ a.profil_name{
     border: 2px solid #cbcccd;
     padding: 6px 0 6px 6px;
     border-radius: 50px;
+    min-width: 100px;
 }
 
+.clock,
+.hat,
+.calories{
+width: 20px;
+height: 20px;
+}
 
 .clock,
 .time,
@@ -116,6 +125,8 @@ a.profil_name{
    display: flex;
    color: #b5904e;
    font-size: 14px;
+ 
+
 
 }
 .time,
