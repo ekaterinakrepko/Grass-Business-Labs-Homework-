@@ -17,11 +17,17 @@ body{
 .wrapper{
     max-width: 1366px;
     margin: 0 auto;
+    padding:0 54px;
 
 }
 
+.header_box{
+    display: flex;
+    flex-flow: column;; 
+}
+
 .menu{
-    padding: 25px 54px 50px  54px;
+    padding: 25px 0px 50px  0px;
 }
 
 .nav_link{
@@ -46,9 +52,15 @@ body{
     padding-bottom: 55px;
 }
 
+.recipes_menu{
+    display: flex;
+}
+
 .recipes_list{
     display: flex;
     border: 2px solid #f2f2f2;
+    margin-bottom: 25px;
+    margin-left: 12px;
  
 }
 
@@ -67,6 +79,8 @@ flex-direction: column;
     left: 15px;
     bottom: 10px;
     text-decoration: none;
+    color: #bcbcbc;
+    font-size: 18.37px;
   
 }
 .my_profil>img{
@@ -91,6 +105,10 @@ border-radius: 50%;
     font-size: 24px;
     line-height: 27.55px;
 
+}
+
+.info_title h4{
+   text-align: center;
 }
 
 .info_icon{
@@ -153,6 +171,7 @@ height: 20px;
 
 .social_network{
     padding-top: 12px;
+    padding-bottom: 16px;
 }
 
 .like{
