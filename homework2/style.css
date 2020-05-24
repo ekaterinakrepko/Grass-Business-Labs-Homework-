@@ -36,6 +36,7 @@ body{
     color: #949494;
     font-size: 14.92px;
     font-family: "Myriad Pro";
+    padding-right: 32px;
 }
 .header,
 .main{
@@ -54,13 +55,17 @@ body{
 
 .recipes_menu{
     display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
 }
 
 .recipes_list{
     display: flex;
+    flex-basis:49%;
     border: 2px solid #f2f2f2;
-    margin-bottom: 25px;
-    margin-left: 12px;
+    margin-bottom: 15px;
+
+
  
 }
 
@@ -87,11 +92,18 @@ flex-direction: column;
 border-radius: 50%;
 }
 
+.photo{
+    flex-basis: 40%; 
+    width: 246px; 
+}
 
+.info{
+    flex-basis: 60%;    
+}
 .photo,
 .info{
     display: flex;
-    flex-basis: 50%;
+    
     background: #ffffff;
     position: relative;
 }
@@ -109,6 +121,7 @@ border-radius: 50%;
 
 .info_title h4{
    text-align: center;
+   padding: 5px;
 }
 
 .info_icon{
@@ -208,4 +221,69 @@ height: 20px;
 
 .social_item_facebook{
     padding: 0 23px;
+}
+
+
+/*Galery*/
+
+.galery{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hot_recipes{
+    padding-bottom: 50px;
+}
+.breakfast{
+    display: flex;
+   align-items: flex-end;
+   justify-content: center;
+    background: url(img/breakfast.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.corn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(img/corn.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.for_children{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(img/for_children.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.healthy_eating{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(img/healthy_eating.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.breakfast p,
+.corn p,
+.for_children p,
+.healthy_eating p,
+.healthy_eating p {
+    color: #ffffff;
+    font-size: 34.44px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 52px;
+}
+
+/**/
+
+.footer{
+    background-color: #252627;
 }
