@@ -1,0 +1,409 @@
+@font-face {
+	font-family: 'Conv_ofont.ru_Myriad Pro';
+	src: url('fonts/ofont.ru_Myriad Pro.eot');
+	src: local('☺'), url('fonts/ofont.ru_Myriad Pro.woff') format('woff'), url('fonts/ofont.ru_Myriad Pro.ttf') format('truetype'), url('fonts/ofont.ru_Myriad Pro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+    font-family: "Myriad Pro";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding:0 54px;
+
+}
+
+.header,
+.main{
+    color: #cbcccd;
+    background: #fcfcfc;
+}
+
+.header_box{
+    display: flex;
+    flex-flow: column;; 
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    padding: 25px 0px 50px  0px;
+}
+
+.menu_link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #949494;
+    font-size: 14.92px;
+    font-family: "Myriad Pro";
+    padding-right: 32px;
+}
+.menu li:last-child a{
+    padding-right: 0px;
+
+
+}
+
+.separator{
+display: flex;
+align-items: center;
+}
+
+.separator_left{
+    height: 2px;
+    width: 592px;
+    background:#dadada;
+}
+
+.separator_right{
+    height: 2px;
+    width: 592px;
+  background:#dadada;
+}
+
+.recipes_title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #5b5b5b;
+    font-size: 34.44px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.selections{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+.chicken_legs{
+    background: url(img/chicken_legs.png) no-repeat;
+    height: 472px;
+    width: 623px;
+    width: 100%;
+}
+
+.recipes_week{
+    background: url(img/recipes_week.png) no-repeat;
+    height: 472px;
+    width: 623px;
+    width: 100%;
+}
+
+.chicken_legs,
+.recipes_week{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selections p{
+font-size: 18.37px;
+color: #ffffff;
+text-transform: uppercase;
+}
+
+.selections h6{
+    font-size: 41.33px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.recipes{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+.slider_menu_link{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5b5b5b;
+
+   
+
+}
+
+.slider_menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid #b4b4b4;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #b4b4b4;
+    width: 480px;
+    
+}
+
+
+
+.slider_menu li:hover{
+    background-color: #2f3032;
+    color:#f1f1f1;
+    border-radius: 50px;
+}
+
+li :hover a{
+    color: #f1f1f1;
+}
+
+/*----------------*/
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #5b5b5b;
+    font-size: 34.44px;
+    padding-bottom: 55px;
+}
+
+.recipes_menu{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-top: 34px;
+}
+
+.recipes_list{
+    display: flex;
+    flex-basis:49%;
+    border: 2px solid #f2f2f2;
+    margin-bottom: 15px;
+
+
+ 
+}
+
+.info{
+display: flex;
+flex-direction: column;
+}
+
+.photo>img{
+    position: absolute;
+    height: 100%;
+}
+
+.my_profil{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    text-decoration: none;
+    color: #bcbcbc;
+    font-size: 18.37px;
+  
+}
+.my_profil>img{
+border-radius: 50%;
+}
+
+.photo{
+    flex-basis: 40%; 
+    width: 246px; 
+}
+
+.info{
+    flex-basis: 60%;    
+}
+.photo,
+.info{
+    display: flex;
+    
+    background: #ffffff;
+    position: relative;
+}
+
+
+
+.info_title{
+    display: flex;
+    justify-content: center;
+    color: #3d3d3d;
+    font-size: 24px;
+    line-height: 27.55px;
+
+}
+
+.info_title h4{
+   text-align: center;
+   padding: 5px;
+}
+
+.info_icon{
+    display: flex;
+    justify-content: space-around;
+
+}
+.icon1,
+.icon2,
+.icon3{
+    display: flex;
+    flex-direction: row; 
+    border: 2px solid #cbcccd;
+    padding: 6px 0 6px 6px;
+    border-radius: 50px;
+    min-width: 100px;
+}
+
+.clock,
+.hat,
+.calories{
+width: 20px;
+height: 20px;
+}
+
+.clock,
+.time,
+.hat,
+.level,
+.calories,
+.run{
+   display: flex;
+   color: #b5904e;
+   font-size: 14px;
+ 
+
+
+}
+.time,
+.level,
+.run{
+    padding-right: 6px;
+    padding-left: 12px;
+}
+
+.info_text{
+    display: flex;
+    color: #5b5b5b;
+    font-size: 16px;
+    line-height: 18.73px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-bottom: 2px solid #cbcccd;
+}
+
+.social_network{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_network{
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+.like{
+    display: flex;
+    padding-right: 13px;
+}
+
+
+.social{
+    display: flex;
+}
+
+.social_item_vk,
+.social_item_facebook,
+.social_item_odnoklassniki{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_item_vk{
+    width: 24px;
+    height: 17px;
+}
+
+.social_item_facebook{
+    width: 10px;
+    height: 17px;
+}
+
+.social_item_odnoklassniki{
+    width: 10px;
+    height: 17px;
+}
+
+.social_item_facebook{
+    padding: 0 23px;
+}
+
+
+/*Galery*/
+
+.galery{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hot_recipes{
+    padding-bottom: 50px;
+}
+.breakfast{
+    display: flex;
+   align-items: flex-end;
+   justify-content: center;
+    background: url(img/breakfast.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.corn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(img/corn.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.for_children{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(img/for_children.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.healthy_eating{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(img/healthy_eating.jpg) no-repeat;
+    height: 490px;
+    width: 305px;
+}
+
+.breakfast p,
+.corn p,
+.for_children p,
+.healthy_eating p,
+.healthy_eating p {
+    color: #ffffff;
+    font-size: 34.44px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 52px;
+}
+
+/**/
+
+.footer{
+    background-color: #252627;
+}
