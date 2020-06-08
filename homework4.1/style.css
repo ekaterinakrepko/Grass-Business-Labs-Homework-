@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:0 54px;
+
+}
+
+.header_box{
+background: url(img/header_background.jpg),  #000000;
+
+
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_menu{
+    display: flex;
+    
+    list-style-type: none;
+}
+.header_link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
