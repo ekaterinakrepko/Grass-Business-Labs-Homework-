@@ -86,9 +86,9 @@
 .aboutMe {
   display: flex; }
   .aboutMe__photo {
-    background: url(./img/aboutMe_photo.jpg) no-repeat;
+    background: url(./img/aboutMe_photo.jpg) center/cover no-repeat;
     width: 100%;
-    height: 755px;
+    height: 39vw;
     display: flex;
     flex-basis: 37%; }
   .aboutMe__info {
@@ -131,6 +131,75 @@
         color: #919191;
         font-size: 18px; }
 
+/*skills*/
+/*
+.skills{
+    display: flex;
+    margin: 95px 0 172px 0;
+    .skills-info{
+        display: flex;
+        flex-basis: 50%;
+        flex-flow: column;
+        justify-content: space-between;
+        padding-left: 205px;
+        &__title{
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 600;
+            color: #566366;
+        }
+        &__subtitle{
+            font-size: 18px;
+            color: #919191;
+        }
+        &__button{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #2ecc71;
+            border: 2px solid #2ecc71;
+            padding: 20px 36px;
+        }
+    }
+    .skills-diagram{
+        display: flex;
+        flex-basis: 50%;
+        flex-flow: column;
+        padding: 0 182px 0 80px;
+        &__name{
+            text-transform: uppercase;
+            color: #566366;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        &__level{
+            display: flex;
+            background: #f2f2f1;
+            color: #ffffff;
+            font-size: 18px;
+            &_90{
+                display: flex;
+                background: #2ecc71;
+                flex-basis: 90%;
+                justify-content: flex-end;
+            }
+            &_80{
+                display: flex;
+                background: #2ecc71;
+                flex-basis: 80%;
+                justify-content: flex-end;
+            }
+            &_70{
+                display: flex;
+                background: #2ecc71;
+                flex-basis: 70%;
+                justify-content: flex-end;
+            }
+
+        }
+    }
+    
+}
+*/
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 1140px; } }
@@ -147,7 +216,8 @@
   .aboutMe {
     flex-flow: row wrap; }
     .aboutMe__photo {
-      flex-basis: 100%; }
+      flex-basis: 100%;
+      height: 117vw; }
     .aboutMe__info {
       flex-basis: 100%; }
     .aboutMe__info_title {
@@ -186,7 +256,20 @@
 
   .aboutMe-categories {
     flex-flow: column wrap;
-    margin-top: 15px; } }
+    margin-top: 15px; }
+
+  .header-box-slider__title {
+    font-size: 35px; } }
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 540px; }
+
+  .header-box-slider__title {
+    font-size: 26px; }
+
+  .header-box-slider__buttom {
+    font-size: 14px;
+    padding: 12px 20px; } }
 /*.aboutMe{
     color: white;
 
