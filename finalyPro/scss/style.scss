@@ -5,7 +5,6 @@
 }
 
 .wrapper{
-    max-width: 1600px;
     margin: 0 auto;
     padding:0;
 }
@@ -174,6 +173,12 @@
     }
 }
 
+.section__title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    color: #566366;
+}
 /*skills*/
 
 .skills{
@@ -186,12 +191,7 @@
         flex-flow: column;
         justify-content: space-between;
         padding-left: 205px;
-        &__title{
-            text-transform: uppercase;
-            font-size: 30px;
-            font-weight: 600;
-            color: #566366;
-        }
+
         &__subtitle{
             font-size: 18px;
             color: #919191;
@@ -255,11 +255,7 @@
         min-height: 415px;
         padding: 0 275px;
         background: #f2f2f1;
-        &__title{
-            color: #566366;
-            text-transform: uppercase;
-            font-size: 30px;
-        }
+
         &__subtitle{
             text-align: center;
             color: #aeaead;
@@ -276,6 +272,78 @@
         }
     }
 
+    /*education*/
+.education{
+    display: flex;
+    min-height: 818px;
+
+    .education-info{
+        display: flex;
+        flex-basis: 50%;
+        flex-flow: column;
+        justify-content: space-around;
+        padding: 100px 35px 0 208px;
+        max-height: 400px;
+        &__subtitle{
+            color: #919191;
+            font-size: 18px;
+        }
+      
+    }
+    .education-diploma{
+        display: flex;
+        flex-basis: 50%;
+        flex-flow: column;
+        justify-content: space-evenly;
+        padding: 80px 202px 0 50px; 
+        .education-box{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            min-height: 248px;
+            &__specialty{
+                color: #566366;
+                font-size: 22px;
+            }
+            &__course{
+                color: #989898;
+                font-size: 18px;
+            }
+            &__level{
+                color: #ffffff;
+                border: 1px solid #2ecc71;
+                padding: 10px 12px;
+                background: #2ecc71;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+            &__separator{
+                height: 1px;
+                width: 565px;
+                background: #cccccc;
+
+            }
+            &__subtitle{
+                color: #aeaeae;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width:1500px){
+    .wrapper{
+        max-width: 1430px;
+    }
+    .education{
+       .education-info{
+           padding-left: 80px;
+    }
+    .education-diploma{
+        padding-right: 100px;
+    }
+}
+}
 @media(max-width:1200px){
     .wrapper{
         max-width: 1140px;
@@ -297,6 +365,15 @@
   }
   .resume{
     padding: 0 190px;
+}
+.education{
+    .education-info{
+        padding-left: 30px;
+        padding-right: 20px;
+ }
+ .education-diploma{
+     padding-right: 30px;
+ }
 }
 }
 
@@ -363,8 +440,23 @@
     .resume{
         padding: 0 150px;
     }
+    .education{
+        flex-flow: wrap;
+        .education-info{
+            flex-basis: 100%;
+            align-items: center;
+        }
+        .education-diploma{
+            flex-basis: 100%;
+        }
+    }
 
 }
+
+
+
+
+
 @media(max-width:934px){
     .wrapper{
         max-width: 900px;
@@ -422,7 +514,7 @@
         max-width: 540px;
     }
     .header-box-slider__title{
-        font-size: 26px;
+        font-size: 22px;
     }
     .header-box-slider__buttom{
         font-size: 14px;
