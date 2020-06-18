@@ -13,7 +13,8 @@
   justify-content: center;
   align-items: center;
   background: url(./img/header_photo.jpg) no-repeat center/cover;
-  height: 62vw; }
+  height: 62vw;
+  position: relative; }
   .header-box-slider__title {
     font-size: 60px;
     color: #ffffff;
@@ -31,6 +32,9 @@
     padding: 20px 35px;
     text-transform: uppercase;
     color: #ffffff; }
+  .header-box-slider__buttom:hover {
+    color: #2ecc71;
+    border: 1px solid #2ecc71; }
 
 .header-box-nav {
   display: flex;
@@ -78,9 +82,25 @@
       text-transform: uppercase;
       font-size: 30px;
       color: #566366; }
+    .info .info-block__title:hover {
+      color: #2ecc71; }
     .info .info-block__content {
       font-size: 18px;
       color: #919191; }
+
+/*burgerMenu__adapt*/
+.header-box-burgerMenu__adapt {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  min-width: 600px;
+  min-height: 400px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #252e30e6; }
+  .header-box-burgerMenu__adapt_unVisible {
+    display: none; }
 
 .aboutMe {
   display: flex; }
@@ -109,11 +129,11 @@
     .aboutMe__info .aboutMe-categories {
       display: flex;
       flex-wrap: wrap; }
-      .aboutMe__info .aboutMe-categories_name {
+      .aboutMe__info .aboutMe-categories__name {
         flex-basis: 50%;
         display: flex;
         margin-bottom: 55px; }
-        .aboutMe__info .aboutMe-categories_name > div:last-child {
+        .aboutMe__info .aboutMe-categories__name > div:last-child {
           display: flex;
           flex-direction: column;
           margin-left: 20px; }
@@ -136,6 +156,9 @@
   font-weight: 600;
   color: #566366; }
 
+.section__title:hover {
+  color: #2ecc71; }
+
 /*skills*/
 .skills {
   display: flex;
@@ -157,6 +180,9 @@
       padding: 20px 36px;
       background: #ffffff;
       border: 1px solid #2ecc71; }
+    .skills .skills-info__button:hover {
+      background-color: #2ecc71;
+      color: #ffffff; }
   .skills .skills-diagram {
     display: flex;
     flex-basis: 50%;
@@ -209,6 +235,9 @@
     color: #3bcf7a;
     border: 1px solid #3bcf7a;
     padding: 20px; }
+  .resume__button:hover {
+    color: #f2f2f1;
+    background: #3bcf7a; }
 
 /*education*/
 .education {
@@ -258,11 +287,14 @@
         font-size: 18px; }
 
 .separator {
-  display: block;
-  height: 1px;
-  width: 1185px;
-  background: #cccccc;
-  text-align: center; }
+  display: flex;
+  justify-content: center; }
+  .separator__block {
+    display: block;
+    height: 1px;
+    width: 1185px;
+    background: #cccccc;
+    text-align: center; }
 
 .education_second {
   min-height: 1125px; }
@@ -287,13 +319,19 @@
     .recomend__subtitle_author {
       color: #566366;
       font-size: 18px; }
-  .recomend__button {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
-    color: #3bcf7a;
-    border: 1px solid #3bcf7a;
-    padding: 20px; }
+  .recomend__slider {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px; }
+    .recomend__slider_static {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      color: #3bcf7a;
+      border: 1px solid #3bcf7a; }
+    .recomend__slider span:hover {
+      background: #3bcf7a; }
 
 @media (max-width: 1500px) {
   .wrapper {
@@ -322,7 +360,10 @@
     padding-left: 30px;
     padding-right: 20px; }
   .education .education-diploma {
-    padding-right: 30px; } }
+    padding-right: 30px; }
+
+  .separator__block {
+    width: 850px; } }
 @media (max-width: 1110px) {
   .wrapper {
     max-width: 1020px; }
@@ -330,7 +371,7 @@
   .aboutMe__info_content {
     font-size: 16px;
     line-height: 20px; }
-  .aboutMe__info .aboutMe-categories_name {
+  .aboutMe__info .aboutMe-categories__name {
     margin-bottom: 25px; } }
 @media (max-width: 992px) {
   .wrapper {
@@ -338,7 +379,10 @@
 
   .info {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    min-height: 550px;
+    justify-content: space-around;
+    padding: 50px 0; }
     .info .info-block__title {
       text-align: center; }
 
@@ -410,7 +454,13 @@
       background-color: #ffffff; }
       .header-box-burgerMenu__burger span {
         background-color: #252e30;
-        height: 4px; } }
+        height: 4px; }
+
+  .separator__block {
+    width: 670px; }
+
+  .recomend {
+    padding: 0 100px; } }
 @media (max-width: 768px) {
   .wrapper {
     max-width: 720px; }
@@ -423,7 +473,10 @@
     font-size: 35px; }
 
   .resume {
-    padding: 0 80px; } }
+    padding: 0 80px; }
+
+  .separator__block {
+    width: 450px; } }
 @media (max-width: 650px) {
   .wrapper {
     max-width: 590px; }
@@ -440,6 +493,9 @@
   .header-box-slider__buttom {
     font-size: 14px;
     padding: 12px 20px; }
+
+  .info {
+    padding: 20px 0; }
 
   .aboutMe__info {
     padding: 10px; }
