@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.toDo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 900px;
+    min-height: 300px;
+    .toDo-box{
+        display: flex;
+        justify-content: center;
+       &__task{
+           border: none;
+           border-bottom: 1px solid #B0C4DE;
+           min-width: 600px;
+       }
+       &__add{
+           text-transform: uppercase;
+           background-color: #1E90FF;
+           border: none;
+           padding: 15px;
+           margin-left: 20px;
+       }
+
+    }
+
+    .toDo-sorting{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        min-width: 880px;
+
+        &__sort{
+            padding-right: 5px;
+        }
+        &__search{
+            min-width: 500px;
+            border: none;
+           border-bottom: 1px solid #B0C4DE;
+
+        }
+    }
+    .toDo-new{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        min-width: 880px;
+        /*display: none;*/
+        &__date{
+            width: 100px;
+            height: 70px;
+            background:#1e90ff8a;
+        }
+        &__priority{
+            width: 60px;
+            height: 70px;
+            background:#1e90ff8a;
+        }
+        &__task{
+            width: 500px;
+            min-height: 70px;
+            border-radius: 50px;
+            background: #1e90ff42;
+            border:none
+        }
+    }
+
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <form class="form" action="#" onsubmit="event.preventDefault();">
+        
+            <div class="form-box">
+                <h3>Login Page</h3>
+                <div class="form-box__error">Невірний логін або пароль</div>
+                <label class="form-box__email">Email 
+                    <input type="text" name="email" required placeholder="Enter your email" class="form-box__email form-box__email_cont">
+                </label>
+                <label class="form-box__password">Password 
+                    <input type="text" name="password" required placeholder="Enter your password, min 8, max 12" class="form-box__password form-box__password_cont">
+                    <div class="form-box__password  form-box__password_error">Невірний пароль</div>
+                </label>
+                <button class="form-box__button" onclick="a()">Login</button>
+        </div>
+    </form>
+    <script src="js/min.js">
+
+    </script>
+</body>
+</html>
